@@ -35,7 +35,13 @@ const planets = [
     distance: 150,
     orbitSpeed: 0.03,
   },
-  { name: "Mars", radius: 5, color: "red", distance: 228, orbitSpeed: 0.024 },
+  {
+    name: "Mars",
+    radius: 5,
+    color: "red",
+    distance: 228,
+    orbitSpeed: 0.024,
+  },
   {
     name: "Jupiter",
     radius: 20,
@@ -70,7 +76,7 @@ const shootingStars = [];
 const backgroundStars = []; // Array to hold the background stars
 
 function initBackgroundStars() {
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 200; i++) {
     const x = Math.random() * canvas.width;
     const y = Math.random() * canvas.height;
     const size = Math.random() * 2;
